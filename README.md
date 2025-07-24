@@ -7,9 +7,6 @@
     </a> 
 </p>
 
-
-
-
 ## basic ERP
 This is basic ERP created with Laravel and bootstrap 
 
