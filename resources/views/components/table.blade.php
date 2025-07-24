@@ -5,6 +5,7 @@
         @foreach ($labels as $item)
           <th scope="col">{{$item}}</th>    
         @endforeach
+        <th scope="col">Action</th>    
       </tr>
     </thead>
     <tbody>
