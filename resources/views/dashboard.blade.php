@@ -17,7 +17,14 @@
                 </div>
                 <br>
                 <div class="row">
-                  @include('product.table') 
+                  @include('components.table',[
+                    'labels' => [
+                      'id' => 'ID',
+                      'name' => 'Name',
+                      'price' => 'Price'
+                    ],
+                    'datas' => ($products ?? [])
+                  ]) 
                 </div>
               </div>
               <div class="col p-4">
@@ -25,7 +32,13 @@
                   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#storageModal">Create storage</button>
                 </div><br>
                 <div class="row">
-                  @include('storage.table') 
+                  @include('components.table',[
+                    'labels' => [
+                      'id' => 'ID',
+                      'name' => 'Name',
+                    ],
+                    'datas' => ($storages ?? [])
+                  ]) 
                 </div>
               </div>
               <div class="col p-4">
@@ -33,7 +46,14 @@
                   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#couponModal">Create coupons</button>
                 </div><br>
                 <div class="row">
-                  @include('coupon.table') 
+                  @include('components.table', [
+                    'labels' => [
+                      'id' => 'ID',
+                      'name' => 'Name',
+                      'porcetage' => 'Porcetage',
+                    ],
+                    'datas' => ($coupons ?? [])
+                  ]) 
                 </div>
               </div>
             </div>
