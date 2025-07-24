@@ -30,10 +30,10 @@
               </div>
               <div class="col p-4">
                 <div class="row">
-                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Create coupons</button>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#couponModal">Create coupons</button>
                 </div><br>
                 <div class="row">
-                  @include('storage.table') 
+                  @include('coupon.table') 
                 </div>
               </div>
             </div>
@@ -41,6 +41,7 @@
       
       @include('product.create') 
       @include('storage.form') 
+      @include('coupon.create') 
 
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>

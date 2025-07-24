@@ -1,24 +1,28 @@
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="couponModal" tabindex="-1" aria-labelledby="couponModal" aria-hidden="true">
     <div class="modal-dialog">
-        <form method="POST" action="{{ route('createProduct') }}">
+        <form method="POST" action="{{ route('createCoupon') }}">
             @csrf
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">New product</h1>
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">New Coupon</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="mb-3">
-                    <label for="inputProductName" class="form-label">Product name:</label>
-                    <input type="text" class="form-control" id="name" name="name" aria-describedby="productHelp">
+                        <label for="inputProductName" class="form-label">Coupon name:</label>
+                        <input type="text" class="form-control" id="name" name="name" aria-describedby="productHelp">
                     </div>
                     <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Price:</label>
-                        <input type="text" class="form-control" id="price" name="price" aria-describedby="productHelp">
+                        <label for="exampleInputEmail1" class="form-label">Porcetage:</label>
+                        <input type="text" class="form-control" id="porcetage" name="porcetage" aria-describedby="productHelp">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Quantity:</label>
                         <input type="text" class="form-control" id="quantity" name="quantity" aria-describedby="productHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Valid date:</label>
+                        <input type="text" class="form-control" id="valid" name="valid" aria-describedby="productHelp">
                     </div>
                 </div>
                 <div class="modal-footer">

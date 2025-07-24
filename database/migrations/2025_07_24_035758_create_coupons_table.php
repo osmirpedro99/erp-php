@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('coupons', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->float('porcetage');
+            $table->integer('quantity');
+            $table->timestamp('valid')->nullable();
             $table->timestamps();
         });
     }
