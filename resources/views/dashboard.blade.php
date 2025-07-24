@@ -11,30 +11,36 @@
   <body>
       <div class="container-fluid text-center">
           <div class="row align-items-center m-5 px-4">
-              <div class="col">
+              <div class="col p-4">
                 <div class="row">
                   <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Create Product</button>
                 </div>
                 <br>
                 <div class="row">
-                  @include('components.table') 
+                  @include('product.table') 
                 </div>
               </div>
-              <div class="col">
+              <div class="col p-4">
                 <div class="row">
-                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Create storage</button>
-                </div>
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#storageModal">Create storage</button>
+                </div><br>
                 <div class="row">
-                  @include('components.table') 
+                  @include('storage.table') 
                 </div>
               </div>
-              <div class="col">
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Create coupons</button>
+              <div class="col p-4">
+                <div class="row">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Create coupons</button>
+                </div><br>
+                <div class="row">
+                  @include('storage.table') 
+                </div>
               </div>
             </div>
       </div>
       
-      @include('components.forms.product.create') 
+      @include('product.create') 
+      @include('storage.create') 
 
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
