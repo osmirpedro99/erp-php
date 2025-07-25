@@ -19,7 +19,7 @@
               <td>{{ $data->$key}}</td>
             @endforeach
             <td>
-              <button type="button" class="btn btn-outline-info">Edit</button>
+              <button type="button" class="btn btn-outline-info editData" data-bs-toggle="modal" data-bs-target="#exampleModal" data-edit="{{$data}}" >Edit</button>
             </td>
           </tr>
         @endforeach

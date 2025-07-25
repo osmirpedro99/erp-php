@@ -10,7 +10,7 @@
                 <div class="modal-body">
                     <div class="mb-3">
                     <label for="inputProductName" class="form-label">Product name:</label>
-                    <input type="text" class="form-control" id="name" name="name" aria-describedby="productHelp">
+                    <input type="text" class="form-control" id="name" name="name" aria-describedby="productHelp" value="{{ $data->name ?? ''}}">
                     </div>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">Price:</label>
