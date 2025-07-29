@@ -7,16 +7,38 @@
     </a> 
 </p>
 
-## basic ERP
-This is basic ERP created with Laravel and bootstrap 
+## Basic ERP
 
+<details>
+  <summary><strong>Description[English]</strong></summary>
+  In work...
+</details>
+
+
+<details>
+ <summary><strong>Descrição[Português]</strong></summary>
+Fiz este projeto com intuito de mostrar minhas habilidades
+em php utilizando uma versão atual do laravel e bootstrap
+
+A ideia desse projeto e ser simples, focando na modularização,
+atualmente consistes em 3 modulos que são:
+- Produtos
+- Storage (Que pode ser utiilzado para estoque ou categoria)
+- Cupons
+
+**Front-end** e composto por 3 arquivos um deles sendo a pagina inicial
+e dois components que são os de tabela e o form para manipulação do dado
+</details>
+
+
+## Frameworks, Libraries and others...
 - [Bootstrap](https://getbootstrap.com)
 - [Laravel](https://laravel.com)
 
-## Premium devs
+
+## Devs
 
 - **[Osmir Pedro](https://www.linkedin.com/in/osmir-pedro-89139b14b/)**
 
 ## License
-
-The ERP is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
