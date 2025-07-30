@@ -18,6 +18,7 @@
                 <br>
                 <div class="row">
                   @include('components.table',[
+                    'formId'=> 'productFormModal',
                     'labels' => [
                       'id' => 'ID',
                       'name' => 'Name',
@@ -33,6 +34,7 @@
                 </div><br>
                 <div class="row">
                   @include('components.table',[
+                    'formId'=> 'storageFormModal',
                     'labels' => [
                       'id' => 'ID',
                       'name' => 'Name',
@@ -47,6 +49,7 @@
                 </div><br>
                 <div class="row">
                   @include('components.table', [
+                    'formId'=> 'couponFormModal',
                     'labels' => [
                       'id' => 'ID',
                       'name' => 'Name',

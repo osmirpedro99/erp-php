@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Storage;
 use Illuminate\Http\Request;
 use Illuminate\Auth\Events\Registered;
+use League\CommonMark\Extension\CommonMark\Node\Inline\Strong;
 
 class StorageController extends Controller
 {
@@ -59,7 +60,11 @@ class StorageController extends Controller
      */
     public function update(Request $request, Storage $storage)
     {
-        //
+        $storage = Storage::update($request->all());
+        
+        event(new Registered($storage));
+
+        return redirect('/');
     }
 
     /**

@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [IndexController::class, 'index'])->name('dashboard');
 
 Route::post('/strorage/create', [StorageController::class, 'store'])->name('createStorage');
+Route::put('/strorage/update/{id}', [StorageController::class, 'update'])->name('updateStorage');
 
 Route::post('/product/create', [ProductController::class, 'store'])->name('createProduct');
 

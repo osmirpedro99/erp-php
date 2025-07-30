@@ -1,7 +1,7 @@
 <div class="modal fade" id="{{ $formId }}" tabindex="-1" aria-labelledby="formModal" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
-            <form method="POST" action='{{ route("$route") }}''>
+            <form class="formModal" method="POST" action='{{ route("$route") }}''>
                 @csrf
                 <div class="modal-header">
                     <h1 class="modal-title fs-5" id="modalLabel">New {{ $title }}</h1>
